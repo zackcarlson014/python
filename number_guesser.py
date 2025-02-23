@@ -9,3 +9,6 @@ if playing.lower() != "yes":
 
 print("Okay! Let's play!")
 
+number = random.randint(-5, 11)
+print(number)
+
