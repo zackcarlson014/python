@@ -1,1 +1,1 @@
-print("")
+print("Welcome to Z's quiz game!")
