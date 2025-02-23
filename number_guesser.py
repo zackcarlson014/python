@@ -2,13 +2,37 @@ import random
 
 print("Welcome to Z's number guesser game!")
 
-playing = input("Do you want to play? (yes/no) ")
+top_of_range = input("Set your limit for the range of numbers (type a number): ")
 
-if playing.lower() != "yes":
+if top_of_range.isdigit():
+    top_of_range = int(top_of_range)
+
+    if top_of_range <= 0:
+        print("Please type a number larger than 0 next time.")
+        quit()
+else:
+    print("Please type a number next time.")
     quit()
 
-print("Okay! Let's play!")
+random_number = random.randint(0, top_of_range)
+guesses = 0
 
-number = random.randint(-5, 11)
-print(number)
+while True:
+    guesses += 1
+    user_guess = input("Make a guess: ")
+    if user_guess.isdigit():
+        user_guess = int(user_guess)
+    else:
+        print("Please type a number next time.")
+        continue
+    
+    if user_guess == random_number:
+        print("You got it!")
+        break
+    elif user_guess > random_number:
+        print("You were above the number!")
+    else:
+        print("You were below the number!")
+
+print("You got it in", guesses, "guesses.")
 
