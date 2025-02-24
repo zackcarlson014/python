@@ -1,6 +1,3 @@
 pwd = input("What is the master passwrord? ")
 
-if pwd == "1234":
-    print("Access granted")
-else:
-    print("Access denied")
+mode = input("Do you want to add a new password or retrieve existing ones (add/view)? ")
