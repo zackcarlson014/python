@@ -14,4 +14,6 @@ while True:
     computer_pick = options[random_number]
     print("Computer picked", computer_pick + ".")
 
+    if user_input == computer_pick:
+        print("It's a tie!")
     
