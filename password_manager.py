@@ -24,7 +24,3 @@ while True:
     else:
         mode = input("Invalid mode. Do you want to add a new password or retrieve existing ones (add/view)? ")
         continue
-
-
-
-
