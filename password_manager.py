@@ -1,4 +1,4 @@
-pwd = input("What is the master passwrord? ")
+master_pwd = input("What is the master passwrord? ")
 
 def view():
     pass
