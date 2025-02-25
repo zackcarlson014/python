@@ -12,7 +12,9 @@ while True:
     mode = input("Do you want to add a new password or retrieve existing ones (add/view/quit)? ")
     if mode == "quit":
         break
-    elif mode == "add" or mode == "view":
+    elif mode == "add":
+        pass
+    elif mode == "view":
         pass
     else:
         mode = input("Invalid mode. Do you want to add a new password or retrieve existing ones (add/view)? ")
