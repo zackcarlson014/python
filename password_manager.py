@@ -6,7 +6,10 @@ def view():
 view()
 
 def add():
-    pass
+    name = input("Account name: ")
+    pwd = input("Password: ")
+    with open("passwords.txt", "a") as f:
+        f.write(f"{name} {pwd}\n")
 
 while True:
     mode = input("Do you want to add a new password or retrieve existing ones (add/view/quit)? ")
