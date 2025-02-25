@@ -1,10 +1,10 @@
 pwd = input("What is the master passwrord? ")
 
-mode = input("Do you want to add a new password or retrieve existing ones (add/view/quit)? ")
 
 while True:
+    mode = input("Do you want to add a new password or retrieve existing ones (add/view/quit)? ")
     if mode == "quit":
-        quit()
+        break
     elif mode == "add" or mode == "view":
         pass
     else:
