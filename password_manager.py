@@ -5,8 +5,6 @@ def view():
         for line in f:
             print(line)
 
-view()
-
 def add():
     name = input("Account name: ")
     pwd = input("Password: ")
