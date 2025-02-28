@@ -25,7 +25,7 @@ while True:
             print("Starting game with", players, "players.")
             break
         else:
-            print("Invalid number of players. Please try again.")
+            print("Invalid input. Please enter a number between 2 and 4.")
             continue
             
     else:
