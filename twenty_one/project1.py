@@ -21,7 +21,7 @@ while True:
 
     if players.isdigit():
         players = int(players)
-        if players < 2 or players > 4:
+        if 2 > players > 4:
             print("Invalid number of players. Please try again.")
             continue
         else:
