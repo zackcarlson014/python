@@ -13,13 +13,23 @@ def roll_dice():
     return values[roll]
 
 while True:
-    players = int(input("How many players? (1-4) "))
-    if players < 1 or players > 4:
-      print("Invalid number of players.")
-      continue
+    players = int(input("How many players? (1-4 / q) "))
+
+    if players == 'q':
+        print("Exiting the game.")
+        break
 
     if players.isdigit():
         players = int(players)
+        if players > 1 and players < 4:
+            print("Invalid number of players. Please try again.")
+            continue
+        else:
+            print("Starting game with", players, "players.")
+            break
+    else:
+        print("Invalid input. Please enter a number between 1 and 4.")
+        continue
         
 
   
