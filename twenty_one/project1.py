@@ -13,7 +13,7 @@ def roll_dice():
     return values[roll]
 
 while True:
-    players = int(input("How many players? (1-4 / q) "))
+    players = input("How many players? (1-4 / q) ")
 
     if players == 'q':
         print("Exiting the game.")
