@@ -1,0 +1,26 @@
+import random
+
+values = { 1: 1, 2: 2, 3: 2, 4: 2, 5: 3, 6: 3 }
+
+win = 21
+
+total_score = 0
+
+def roll_dice():
+    min_value = 1
+    max_value = 6
+    roll = random.randint(min_value, max_value)
+    return values[roll]
+
+while True:
+    players = int(input("How many players? (1-4) "))
+    if players < 1 or players > 4:
+      print("Invalid number of players.")
+      continue
+
+    if players.isdigit():
+        players = int(players)
+        
+
+  
+
