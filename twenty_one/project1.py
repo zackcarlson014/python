@@ -21,12 +21,13 @@ while True:
 
     if players.isdigit():
         players = int(players)
-        if 2 > players > 4:
-            print("Invalid number of players. Please try again.")
-            continue
-        else:
+        if 2 <= players <= 4:
             print("Starting game with", players, "players.")
             break
+        else:
+            print("Invalid number of players. Please try again.")
+            continue
+            
     else:
         print("Invalid input. Please enter a number between 2 and 4.")
         continue
