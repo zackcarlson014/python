@@ -25,3 +25,11 @@ def print_maze(maze, stdscr, path=[]):
                 stdscr.addstr(i, j*2, "X", RED)
             else:
                 stdscr.addstr(i, j*2, value, BLUE)
+
+def find_start(maze, start):
+    for i, row in enumerate(maze):
+        for j, value in enumerate(row):
+            if value == start:
+                return i, j
+
+    return None
