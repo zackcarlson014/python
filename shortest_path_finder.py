@@ -89,3 +89,5 @@ def main(stdscr):
 
     find_path(maze, stdscr)
     stdscr.getch()
+
+wrapper(main)
