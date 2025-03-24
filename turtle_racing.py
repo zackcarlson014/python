@@ -46,3 +46,8 @@ def create_turtles(colors):
 		turtles.append(racer)
 
 	return turtles
+
+def init_turtle():
+	screen = turtle.Screen()
+	screen.setup(WIDTH, HEIGHT)
+	screen.title('Turtle Racing!')
