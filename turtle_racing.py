@@ -31,3 +31,18 @@ def race(colors):
 			x, y = racer.pos()
 			if y >= HEIGHT // 2 - 10:
 				return colors[turtles.index(racer)]
+			
+def create_turtles(colors):
+	turtles = []
+	spacingx = WIDTH // (len(colors) + 1)
+	for i, color in enumerate(colors):
+		racer = turtle.Turtle()
+		racer.color(color)
+		racer.shape('turtle')
+		racer.left(90)
+		racer.penup()
+		racer.setpos(-WIDTH//2 + (i + 1) * spacingx, -HEIGHT//2 + 20)
+		racer.pendown()
+		turtles.append(racer)
+
+	return turtles
