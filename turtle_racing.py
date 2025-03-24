@@ -51,3 +51,13 @@ def init_turtle():
 	screen = turtle.Screen()
 	screen.setup(WIDTH, HEIGHT)
 	screen.title('Turtle Racing!')
+	
+racers = get_number_of_racers()
+init_turtle()
+
+random.shuffle(COLORS)
+colors = COLORS[:racers]
+
+winner = race(colors)
+print("The winner is the turtle with color:", winner)
+time.sleep(5)
